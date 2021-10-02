@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+
+{% block name %}
+{{super()}}
+{{name}}
+{% endblock %}
+
+{% block years %}
+{{super()}}
+{{ years }}
+<h1>{{ text }} </h1>
+
+{% endblock %}
+
+{% block founder %}
+{{super()}}
+<p>{{ founder }} </p>
+<img src="{{image}}" width="300">
+{% endblock %}
